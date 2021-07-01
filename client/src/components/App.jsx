@@ -1,3 +1,7 @@
+import React from 'react'
+import GroceryList from './GroceryList.jsx'
+import GroceryData from '../data/groceriesData.js'
+
 const App = () => (
   <div>
     <img src="grocery-bags.png" />
@@ -12,15 +16,7 @@ const App = () => (
       <button>Add Grocery</button>
       <ul className="groceries">
         <li>
-          <span>apples - </span>
-          <span>4</span>
-        </li>
-        <li>
-          <span>bread - </span>
-          <span>2</span>
-        </li>
-        <li>
-          <span>etc...</span>
+          <GroceryList list={GroceryData}/>
         </li>
       </ul>
     </form>
