@@ -1,3 +1,5 @@
+import index from '../index.jsx';
+
 const App = () => (
   <div>
     <img src="grocery-bags.png" />
